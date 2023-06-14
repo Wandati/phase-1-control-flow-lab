@@ -1,11 +1,11 @@
-function scuberGreetingForFeet(ft){
+function scuberGreetingForFeet(ride){
   // Write your code here!
-  if (ft <= 400 ){
-    return "This one is on me!"
-  }else if (ft > 2000){
-    return "I will gladly take your thirty bucks."
-  }else if (ft > 2500){
-    return "No can do."
+  if(ride >= 2500){
+    return "No can do.";
+  }else if(ride >= 2000 && ride < 2500){
+    return "I will gladly take your thirty bucks.";
+  }else if(ride < 400){
+    return "This one is on me!";
   }
 }
 
@@ -22,6 +22,7 @@ function switchOnCharmFromTip(tip){
       return"Thank you so much."
     case "not as generous":
       return"Thank you."
+      
     default:
       return"Bye."
   }
